@@ -28,6 +28,11 @@ class StudentsController < ActionController::Base
     redirect_to student_path(@student)
   end
 
+  def destroy
+    Student.destroy(params[:id])
+    redirect_to students_path
+  end
+
   private
 
   def student_params
