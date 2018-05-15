@@ -16,8 +16,6 @@ describe 'As a user visiting a specific student page' do
 
     visit student_path(student)
 
-    save_and_open_page
-
     expect(page).to have_content(student.name)
 
     expect(page).to have_content(address1.description)
