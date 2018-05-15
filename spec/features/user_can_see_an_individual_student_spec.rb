@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 describe 'As a user visiting a specific student page' do
-  scenario 'I can see the name of the student' do
+  scenario 'I click a link from the students index and see a students info' do
     student = Student.create!(name: 'Sonya Taylor')
 
     visit student_path(student)

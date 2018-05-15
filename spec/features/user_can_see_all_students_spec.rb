@@ -3,8 +3,8 @@ require 'rails_helper'
 describe 'user sees all students' do
   describe 'they visit /students' do
     it 'displays all students' do
-      student1 = Student.new(name: 'Sonya Jackson')
-      student2 = Student.new(name: 'Bob Bobson')
+      student1 = Student.create!(name: 'Sonya Jackson')
+      student2 = Student.create!(name: 'Bob Bobson')
 
       visit '/students'
 
